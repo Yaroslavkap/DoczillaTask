@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: black; */
+    background: rgb(237,238,240);
+}
+
+/* Navbar */
+
+.NavBar {
+    background: rgb(0,119,255);
+    margin: 0;
+    padding: 0;
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background: black; */
+    /* background: rgba(0, 0, 0, .4);
+    box-shadow: 0 1rem 10px rgba(0, 0, 0, .4); */
+
+    position: fixed;
+    /* z-index: 99999; */
+    transition: 'top 2s';
+}
+
+.NavBar h1 {
+    color: white;
+    margin-left: 5rem;
+}
+
+.NavBar input {
+    margin-right: 10rem;
+    height: 2.5rem;
+    width: 25rem;
+    border-radius: .9rem;
+
+    padding: 5px 15px;
+    border-color: white;
+    
+    /* margin-top: 25px; */
+}
+ 
+
+/* main */
+
+
+/*////////// Left ///////////////*/
+
+.left {
+    
+    background: white;
+    position: fixed;
+    margin-top: 10vh;
+    width: 30vw;
+    height: 90vh;
+    /* z-index: 99; */
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*///////////// Right ///////////////*/
+
+.right {
+    padding-top: 15vh;
+    /* margin-left: 30vw; */
+    width: 100%;
+    padding-left: 40vw;
+    /* height: 150vh;
+    background: red; */
+}
+
+.rightContent {
+    width: 50vw;
+    height: 70vh;
+    /* background: red; */
+    border: 1px solid red;
+}
