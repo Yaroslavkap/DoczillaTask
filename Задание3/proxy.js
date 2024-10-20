@@ -5,7 +5,7 @@ const http = require('http');
 // Указываем порт для сервера
 const port = 3000;
 
-const url ='https://todo.doczilla.pro/api/todos'
+const url ='https://todo.doczilla.pro/'
 
 // Создаем сервер
 const server = http.createServer(async (req, res) => {
@@ -15,10 +15,10 @@ const server = http.createServer(async (req, res) => {
   res.setHeader('Content-Type', 'application/json'); // Устанавливаем тип контента как JSON
 
   // Проверяем, что запрос идет на правильный путь
-  if (req.url === '/api/data' && req.method === 'GET') {
+  if (req.url.includes('/api/todos') && req.method === 'GET') {
     try {
       // Делаем запрос на сторонний API
-      const response = await fetch(url);
+      const response = await fetch(url + req.url);
 
       // Проверяем успешен ли запрос
       if (!response.ok) {

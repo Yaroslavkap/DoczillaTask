@@ -9,13 +9,14 @@
 <body>
     <div class="NavBar">
         <h1 >TodoList</h1>
-        <input placeholder="Поиск"/>
+        <input id="searc" placeholder="Поиск"/>
     </div>
     
     <div class="left">
-        <button type="button">Сегодня</button>
-        <button type="button">На неделю</button>
-        <button type="button">Невыполненные</button>
+        <button type="button" id ='today' class="btn">Сегодня</button>
+        <button type="button" id ='week' class="btn">На неделю</button>
+        <button type="button" id="notDone" class="btn">Показать невыполненные</button>
+        <input class="date" type="date"/>
     </div>
 
     <div class="right">
@@ -24,6 +25,13 @@
             <h1 id="test">e</h1> -->
         </div>
     </div>
+
+    <div id="modal" class="modal">
+        <button class="close-btn" id="closeModal">Закрыть</button>
+        <h2>Описание</h2>
+        <p id="todo-description"></p>
+    </div>
+    <div id="overlay" class="overlay"></div>
 
     <script type="module" src='index.js'></script>
 </body>
