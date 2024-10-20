@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+<script defer src="bundle.js"></script></head>
+<body>
+    <div class="NavBar">
+        <h1 >TodoList</h1>
+        <div class="searchDiv">
+            <input id="search" class="searchBar" placeholder="Поиск"/>
+            <div class="searchData" id="searchData"></div>
+        </div>
+        
+    </div>
+    
+    <div class="left">
+        <button type="button" id ='today' class="btn">Сегодня</button>
+        <button type="button" id ='week' class="btn">На неделю</button>
+        <button type="button" id="notDone" class="btn">Показать невыполненные</button>
+        <button type="button" id="timeSort" class="btn">Сортировать по времени</button>
+        <h2 class="dateLabel">Выбор даты</h2>
+        <div class="fromDiv">
+            <p class="from">От</p>
+            <input class="date" type="date" id="startDate"/>
+        </div>
+
+        <div class="fromDiv">
+            <p class="from">До</p>
+            <input class="date" type="date" id="endDate"/>
+        </div>
+
+        <button type="button" id ='datePick' class="btn">Выбрать интервал</button>
+        
+        
+
+    </div>
+
+    <div class="right">
+        <div id ='todoList' class="rightContent">
+            <!-- <h1>aaa</h1>
+            <h1 id="test">e</h1> -->
+        </div>
+    </div>
+
+    <div id="modal" class="modal">
+        <button class="close-btn" id="closeModal">Закрыть</button>
+        <h2>Описание</h2>
+        <p id="todo-description"></p>
+    </div>
+    <div id="overlay" class="overlay"></div>
+
+    <script type="module" src='./src/index.js'></script>
+</body>
+</html>
