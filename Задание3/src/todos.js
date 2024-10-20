@@ -84,7 +84,7 @@ export function renderTodos({ data, isLoading = false, error ='' }) {
     const $Todo = document.getElementById('todoList')
   }
 
-  function showTodoDescription(description) {
+  export function showTodoDescription(description) {
     const modal = document.getElementById('modal')
     const overlay = document.getElementById('overlay')
     const todoDescription = document.getElementById('todo-description')
@@ -106,4 +106,7 @@ export function renderTodos({ data, isLoading = false, error ='' }) {
   overlay.addEventListener('click', () => {
     modal.style.display = 'none';
     overlay.style.display = 'none';
+
+    const searchData = document.getElementById('searchData')
+    searchData.style.display = 'none'
   });

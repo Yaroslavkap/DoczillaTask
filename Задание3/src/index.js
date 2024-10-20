@@ -2,7 +2,7 @@ import { fetchData, fetchDataDate, fetchDataFind } from "./data.js"
 import { getTodayTimestamps, getWeekTimestamps } from "./dates.js"
 import { clickNotDone } from "./filters.js"
 import { renderTodos } from "./todos.js"
-import { handleSearchInput } from "./search.js"
+import { handleSearchInput, showInput } from "./search.js"
 //import { init } from "./todos.js"
 
 // console.log("hhhhh")
@@ -78,5 +78,6 @@ $weekBtn.addEventListener('click', async () => {
 /////////////
 const $searchInput = document.getElementById('search')
 $searchInput.addEventListener('input', handleSearchInput)
+$searchInput.addEventListener('click', showInput)
 
 
