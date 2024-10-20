@@ -1,8 +1,8 @@
-import { renderTodos } from "./todos.js";
+import { renderTodos } from "./todos.js"
 
 export async function fetchData(url) {
   
-    renderTodos({ data: [], isLoading: true, error: '' });
+    renderTodos({ data: [], isLoading: true, error: '' })
     let isLoading = true
     let error = ''
     let data = []
@@ -18,7 +18,7 @@ export async function fetchData(url) {
     } finally {
       isLoading = false
     }
-    // console.log(data)
+  
 
     return { data, isLoading, error }
   }
@@ -41,14 +41,14 @@ export async function fetchData(url) {
     } finally {
       isLoading = false
     }
-    // console.log(data)
+  
 
     return { data, isLoading, error }
   }
 
   export async function fetchDataFind(url, string) {
   
-    //renderTodos({ data: [], isLoading: true, error: '' });
+    
     let isLoading = true
     let error = ''
     let data = []
@@ -64,7 +64,7 @@ export async function fetchData(url) {
     } finally {
       isLoading = false
     }
-    // console.log(data)
+    
 
     return { data, isLoading, error }
   }

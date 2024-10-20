@@ -32,7 +32,7 @@ export function renderTodos({ data, isLoading = false, error ='' }) {
     }
   
     if (error) {
-      todoList.textContent = error;
+      todoList.textContent = error
       return
     }
   
@@ -50,9 +50,9 @@ export function renderTodos({ data, isLoading = false, error ='' }) {
     //   todoList.appendChild(todoDiv)
     const html = todoBlock(todo)
     todoList.insertAdjacentHTML('beforeend', html)
-    const todoElement = document.getElementById(`todo-${todo.id}`);
+    const todoElement = document.getElementById(`todo-${todo.id}`)
         todoElement.addEventListener('click', () => {
-            showTodoDescription(todo.fullDesc);
+            showTodoDescription(todo.fullDesc)
         })
     })
   }
@@ -85,12 +85,12 @@ export function renderTodos({ data, isLoading = false, error ='' }) {
   }
 
   function showTodoDescription(description) {
-    const modal = document.getElementById('modal');
-    const overlay = document.getElementById('overlay');
-    const todoDescription = document.getElementById('todo-description');
+    const modal = document.getElementById('modal')
+    const overlay = document.getElementById('overlay')
+    const todoDescription = document.getElementById('todo-description')
     todoDescription.textContent = description;
-    modal.style.display = 'block'; // Показываем модальное окно
-    overlay.style.display = 'block'; // Показываем затемнение фона
+    modal.style.display = 'block'
+    overlay.style.display = 'block'
   }
   
 

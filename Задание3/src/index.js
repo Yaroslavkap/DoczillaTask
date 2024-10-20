@@ -1,4 +1,4 @@
-import { fetchData, fetchDataDate } from "./data.js"
+import { fetchData, fetchDataDate, fetchDataFind } from "./data.js"
 import { getTodayTimestamps, getWeekTimestamps } from "./dates.js"
 import { clickNotDone } from "./filters.js"
 import { renderTodos } from "./todos.js"
@@ -76,5 +76,7 @@ $weekBtn.addEventListener('click', async () => {
 // init2()
 
 /////////////
-// const $searchInput = document.getElementById('search')
-// $searchInput.addEventListener('input',(event) =>console.log(event));
+const $searchInput = document.getElementById('search')
+$searchInput.addEventListener('input', handleSearchInput)
+
+
