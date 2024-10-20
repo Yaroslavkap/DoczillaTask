@@ -29,6 +29,21 @@ export function getWeekTimestamps() {
       endOfDayTimestamp
     };
   }
+
+  export function getRangeTimestamps(startDate, endDate) {
+    const start = new Date(startDate)
+    const end = new Date(endDate)
+    
+    const startOfDay = new Date(Date.UTC(start.getFullYear(), start.getMonth(), start.getDate(), 0, 0, 0, 0)).getTime()
+    const endOfDay = new Date(Date.UTC(end.getFullYear(), end.getMonth(), end.getDate(), 23, 59, 59, 999)).getTime()
+    
+    return {
+        startOfDay,
+        endOfDay
+    }
+}
+
+
   
 
   

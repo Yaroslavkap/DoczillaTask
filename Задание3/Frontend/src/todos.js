@@ -61,8 +61,19 @@ export function renderTodos({ data, isLoading = false, error ='' }) {
 
   export function showNotDone(data) {
     let filtredData = data.filter(el => el.status === false)
-    let isLoading = false
-    let error = ''
+    // let isLoading = false
+    // let error = ''
+    renderTodos({ data: filtredData})
+    console.log(filtredData)
+  }
+
+  export function showByTime(data) {
+    let filtredData = [...data].sort((a, b) => {
+      const timeA = new Date(a.date).getTime()
+      const timeB = new Date(b.date).getTime()
+      return timeA - timeB
+    })
+    
     renderTodos({ data: filtredData})
     console.log(filtredData)
   }

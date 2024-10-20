@@ -11,7 +11,7 @@
         <h1 >TodoList</h1>
         <div class="searchDiv">
             <input id="search" class="searchBar" placeholder="Поиск"/>
-            <div class="searchData" id="searchData">ggg</div>
+            <div class="searchData" id="searchData"></div>
         </div>
         
     </div>
@@ -20,7 +20,22 @@
         <button type="button" id ='today' class="btn">Сегодня</button>
         <button type="button" id ='week' class="btn">На неделю</button>
         <button type="button" id="notDone" class="btn">Показать невыполненные</button>
-        <input class="date" type="date"/>
+        <button type="button" id="timeSort" class="btn">Сортировать по времени</button>
+        <h2 class="dateLabel">Выбор даты</h2>
+        <div class="fromDiv">
+            <p class="from">От</p>
+            <input class="date" type="date" id="startDate"/>
+        </div>
+
+        <div class="fromDiv">
+            <p class="from">До</p>
+            <input class="date" type="date" id="endDate"/>
+        </div>
+
+        <button type="button" id ='datePick' class="btn">Выбрать интервал</button>
+        
+        
+
     </div>
 
     <div class="right">

@@ -124,9 +124,23 @@ body {
 }
 
 .date {
-    margin-top: 5rem;
+    /* margin-top: 1rem; */
 }
 
+.dateLabel {
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+}
+
+.fromDiv {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+}
+
+.from {
+    margin-right: 1rem;
+}
 
 /*///////////// Right ///////////////*/
 
