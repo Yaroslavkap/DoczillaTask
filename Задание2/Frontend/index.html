@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="NavBar">
+        <h1>StudentsApp</h1>
+    </div>
+    <div class="main">
+        <div class="left">
+            <h2>Добавить</h2>
+            <div class="addValue">
+                <p>Имя</p>
+                <input type="text" class="inputText" id="stud_first_name"/>
+            </div>
+
+            <div class="addValue">
+                <p>Фамилия</p>
+                <input type="text" class="inputText" id="stud_last_name"/>
+            </div>
+
+            <div class="addValue">
+                <p>Отчество</p>
+                <input type="text" class="inputText" id="stud_middle_name"/>
+            </div>
+
+            <div class="addValue">
+                <p>Дата рождения</p>
+                <input type="text" class="inputText" id="stud_birth_date"/>
+            </div>
+
+            <div class="addValue">
+                <p>Группа</p>
+                <input type="text" class="inputText" id="stud_group_name"/>
+            </div>
+
+            <p id="stud_err" class="stud_err"></p>
+
+            <button type="button" class="btn" id ='addBtn'>Добавить</button>
+
+            
+        </div>
+
+        <div class="content">
+            <h2>Список студентов</h2>
+            <table class="table" id="studentList">
+                <tr>
+                    <td>ID</td>
+                    <td>ФИО</td>
+                    <td>Дата рождения</td>
+                    <td>Группа</td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="bundle.js"></script>
+</body>
+</html>
