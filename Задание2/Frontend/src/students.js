@@ -61,6 +61,7 @@ export function renderStudents(data) {
         return stud
     } else {
         $err.innerHTML = 'Заполните все поля'
+        return false
     }
     
     //console.log(stud_first_name)
