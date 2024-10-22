@@ -1,8 +1,8 @@
 #include <iostream>
-#include "crow.h"          // HTTP-сервер (Crow)
-#include "crow/middlewares/cors.h" // CORS
+#include "crow.h" 
+#include "crow/middlewares/cors.h"
 
-#include <sqlite3.h>       // SQLite3
+#include <sqlite3.h>
 
 
 bool executeQuery(sqlite3* db, const std::string& query) {
